@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Aska</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      font-family: 'Baloo 2', cursive;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .frame {
+      width: 100%;
+      max-width: 360px; /* dikecilin dari 390px */
+      aspect-ratio: 9 / 16;
+      background-image: url('assets/cover.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .text-wrapper {
+      position: absolute;
+      top: 22%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .text-wrapper h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+
+    .text-wrapper h2 {
+      font-size: 1.5rem;
+      margin-top: 0.3rem;
+    }
+
+    .button-wrapper {
+      position: absolute;
+      top: 60%;
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      background: white;
+      color: black;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 420px) {
+      .frame {
+        max-width: 100%;
+        border-radius: 0; /* tetap siku-siku di HP */
+      }
+    }
+    a{
+    color: black;  
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="text-wrapper">
+    </div>
+    <div class="button-wrapper">
+      <button><a href="https://arunamobilewebsite.my.canva.site/teks-paragraf-anda"> Buka Undangan</a></button>
+    </div>
+  </div>
+</body>
+</html>
